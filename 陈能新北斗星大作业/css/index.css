@@ -1,0 +1,300 @@
+/* 头部 */
+
+.header{
+    height: 0.96rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.icon-sousuo,
+.icon-list{
+    font-size: 0.35rem;
+    color: #05449a;
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+
+.icon-list{
+    font-size: 0.48rem;
+}
+
+.logo{
+    width: 2.1rem;
+    height: 0.95rem
+}
+/*轮播图*/
+.slideBox{
+    position: relative;
+    overflow: hidden;
+}
+.slideBox .hd{
+    position: absolute;
+    height: 0.22rem;
+    line-height: 0.22rem;
+    bottom: 0.3rem;
+    right: 3rem;
+    z-index: 1;
+}
+
+.slideBox .hd li{
+    display: inline-block;
+    width: 0.22rem;
+    height: 0.22rem;
+    border-radius: 0.22rem;
+    background: #fff;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 0 0.1rem;
+    border: 0.02rem solid #183884;
+}
+
+.slideBox .hd li.on{
+    background: #183884;
+}
+
+.slideBox .bd{
+    position: relative;
+    z-index: 0;
+}
+
+.slideBox .bd li{
+    position: relative;
+    text-align: center;
+}
+
+.slideBox .bd li img{
+    width: 100%;
+}
+/* nav*/
+.nav-ztt1{
+    background-color: #28b1f9;
+}
+.nav-ztt2{
+    background-color: #ff8d3a
+}
+.nav-ztt3{
+    background-color: #6fd700
+}
+.nav-ztt4{
+    background-color: #ff6868
+}
+.nav-zdx{
+    font-size: 0.6rem
+}
+.nav li{
+    width: 1.86rem;
+    height: 2.05rem;
+    justify-content: center;
+    align-content: center;
+    background-color: #FFF;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.nav li div{
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-bottom: 0.1rem;
+    border-radius: 0.2rem;
+    text-align: center
+}
+
+.nav li div .iconfont{
+    color: #fff;
+    font-size: 0.5rem;
+}
+
+.nav li p{
+    width: 100%;
+    font-size: 0.24rem;
+    text-align: center;
+}
+
+/*新闻 */
+.rot{
+    height: 1.2rem;
+    background-color: #FFF;
+    margin: 0.1rem 0;
+}
+
+.rot-title{
+    border-right: 0.02rem solid #ccc;
+    height: 0.44rem;
+    margin-left: 0.4rem;
+    margin-right: 0.2rem;
+}
+
+.rot-title span{
+    margin-right: 0.25rem;
+    color: red;
+    font-size: 0.3rem;
+    font-weight: 700;
+}
+
+.rot-cont{
+    width: 5.05rem;
+    height: 0.55rem;
+    align-items: center;
+    display: flex;
+}
+
+.rot-cont .iconfont{
+    font-size: 0.3rem;
+    color: red;
+    margin-right: 0.1rem;
+}
+
+.rot-cont div{
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    width: 4.65rem;
+}
+
+/* 切换 */
+.table {
+    height: 4.7rem;
+    background-color: #FFF;
+    margin-bottom: 0.1rem;
+    position: relative;
+    overflow: hidden;
+}
+.table-title {
+    height: 0.75rem;
+    border-bottom: 0.02rem solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.table-title li {
+    color: #183884;
+    font-size: 0.28rem;
+    position: relative;
+    cursor: pointer;
+}
+.table-title li .on {
+    position: absolute;
+    width: 100%;
+    height: 0.06rem;
+    background-color: #183884;
+    bottom: -0.2rem;
+}
+.table-box {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-top: 0.35rem;
+    width: 100%;
+    height: 3.6rem;
+}
+.table-bd {
+    width: 37.5rem;
+    position: absolute;
+    top: 0;
+    left: -7.5rem;
+}
+.table-bd li {
+    display: flex;
+    float: left;
+    justify-content: space-around;
+    width: 7.5rem;
+}
+.table-bd li img {
+    width: 2.3rem;
+    height: 1.95rem;
+}
+.table-cont {
+    border: 0.01rem solid #e6e6e6;
+    padding-bottom: 0.3rem;
+}
+.table-cont p {
+    text-align: center;
+    font-size: 0.25rem;
+    margin-top: 0.25rem;
+}
+.table-zt{
+    border: 0.01rem solid #b3b3b3;
+    padding: 0.05rem 0.2rem;
+    color: #b3b3b3;
+    font-size: 0.16rem;
+    width: 1.5rem;
+    margin-left: 0.45rem;
+    margin-top: 0.1rem;
+    text-align: center;
+}
+.prev,
+.next {
+    position: absolute;
+    display: block;
+    width: 0.3rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    background-color: #b3b3b3;
+    color: #FFF;
+    text-align: center;
+    font-size: 0.27rem;
+    top: 2.25rem;
+    border-radius: 0.05rem;
+}
+
+.next {
+    right: 0.2rem;
+}
+.prev {
+    left: 0.2rem;
+}
+/* 新闻*/
+.news {
+    height: 2.65rem;
+    background-color: #FFF;
+    margin-bottom: 0.1rem;
+    padding: 0.2rem
+}
+.news-title {
+    border-bottom: 0.01rem solid #999;
+    font-size: 0.24rem;
+    line-height: 0.44rem;
+    color: #183884;
+}
+.news-title span {
+    background-color: #183884;
+    display: inline-block;
+    width: 0.05rem;
+    height: 0.3rem;
+    margin-right: 0.1rem;
+}
+.news-title a {
+    font-size: 0.24rem;
+    line-height: 0.44rem;
+    color: #183884;
+}
+.news-list li {
+    margin-top: 0.05rem;
+    line-height: 0.54rem;
+    font-size: 0.24rem;
+    color: #333;
+}
+.news-list .iconfont {
+    color: #183884;
+    margin-right: 0.1rem;
+}
+.news-list p{
+    color: #999;
+}
+footer {
+    height: 1.3rem;
+    background-color: #fff;
+    padding: 0.1rem;
+    margin-top: -0.3rem;
+}
+footer div{
+    text-align: center;
+    color: #999;
+}
+footer.dibu{
+    color: #183884;
+}
+.dibu a{
+    color: #585757;
+    margin: 0 0.2rem;
+}

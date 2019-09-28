@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+    <link rel="apple-touch-icon-precomposed" href="mobile_logo.png?v1" />
+    <title>移动端开发模板</title>
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/TouchSlide.1.1.js"></script>
+    <script src="js/index.js"></script>
+    <!-- 将px转rem的公式代码 -->
+    <script>
+        var w=document.documentElement.getBoundingClientRect().width;
+        //7.5是根据设计图的大小除以100，需要按照你的实际设计图换算
+        var bili=w/7.5;
+        document.documentElement.style.fontSize=bili+"px";
+
+        // 此时  100px=1rem
+        // 将所有在设计图量出的尺寸都除以100即可转为对应的rem
+    </script>
+<body>
+        <!-- 头部 -->
+        <header class="header justify-content-between">
+            <img src="imges/logo.jpg" class="logo">
+            <div class="d-flex align-items-center">
+                <div class="posir">
+                    <span class="iconfont icon-sousuo"></span>
+                </div>
+                <div class="posir">
+                    <span class="iconfont icon-list"></span>
+                </div>
+            </div>
+        </header>
+        <!-- 轮播图 -->
+        <div id="slideBox" class="slideBox">
+            <div class="bd">
+                <ul>
+                    <li>
+                        <a class="pic" href="#"><img src="imges/slide1.jpg" /></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="imges/slide1.jpg" /></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="imges/slide1.jpg" /></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="imges/slide1.jpg" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hd">
+                <ul></ul>
+            </div>
+        </div>
+        <!-- 导航nav -->
+        <ul class="nav justify-content-between">
+            <li>
+                <div class="nav-ztt1">
+                    <span class="iconfont icon-jiudian"></span>
+                </div>
+                <p>关于华信</p>
+            </li>
+            <li>
+                <div class="nav-ztt2">
+                    <span class="iconfont icon-chanpinzhongxin nav-zdx"></span>
+                </div>
+                <p>产品中心</p>
+            </li>
+            <li>
+                <div class="nav-ztt3">
+                    <span class="iconfont icon-jiejuefangansvg nav-zdx"></span>
+                </div>
+                <p>解决方案</p>
+            </li>
+            <li>
+                <div class="nav-ztt4">
+                    <span class="iconfont icon-xiaoxi"></span>
+                </div>
+                <p>联系我们</p>
+            </li>
+        </ul>
+        <!-- 热点新闻 -->
+        <div class="rot d-flex align-items-center">
+            <div class="rot-title">
+                <span>热点新闻</span>
+            </div>
+            <div class="rot-cont">
+                <span class="iconfont icon-yinliang"></span>
+                <div>
+                    UFirebird战略合作发布,打响北斗低功率物联网第一弹
+                </div>
+            </div>
+        </div>
+        <!-- 切换 -->
+        <div class="table" id="table">
+            <ul class="table-title">
+                <li>
+                    高精度定位天线
+                    <div class="table-xia on"></div>
+                </li>
+                <li>
+                    数传电台
+                    <div class="table-xia"></div>
+                </li>
+                <li>
+                    卫星通信
+                    <div class="table-xia"></div>
+                </li>
+            </ul>
+            <div class="table-box">
+                <ul class="table-bd clearfix">
+                    <li>
+                        <div class="table-cont">
+                            <img src="imges/1 (5).jpg">
+                            <p>卫星通信</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                        <div class="table-cont">
+                            <img src="imges/1 (6).jpg">
+                            <p>2D基准站天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                        <div class="table-cont">
+                            <img src="imges/1 (4).jpg">
+                            <p>无人机天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="table-cont">
+                            <img src="imges/1 (5).jpg">
+                            <p>高精度定位天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                        <div class="table-cont">
+                            <img src="imges/1 (6).jpg">
+                            <p>2D基准站天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                        <div class="table-cont">
+                            <img src="imges/1 (4).jpg">
+                            <p>无人机天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="table-cont">
+                            <img src="imges/1 (5).jpg">
+                            <p>数传电台</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                        <div class="table-cont">
+                            <img src="imges/1 (6).jpg">
+                            <p>2D基准站天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                        <div class="table-cont">
+                            <img src="imges/1 (4).jpg">
+                            <p>无人机天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="table-cont">
+                            <img src="imges/1 (5).jpg">
+                            <p>卫星通信</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                        <div class="table-cont">
+                            <img src="imges/1 (6).jpg">
+                            <p>2D基准站天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                        <div class="table-cont">
+                            <img src="imges/1 (4).jpg">
+                            <p>无人机天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="table-cont">
+                            <img src="imges/1 (5).jpg">
+                            <p>高精度定位天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                        <div class="table-cont">
+                            <img src="imges/1 (6).jpg">
+                            <p>2D基准站天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                        <div class="table-cont">
+                            <img src="imges/1 (4).jpg">
+                            <p>无人机天线</p>
+                            <p class="table-zt">查看详情</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                <a class="prev" href="javascript:void(0)"><</a>
+                <a class="next" href="javascript:void(0)">></a>
+        </div>
+        <!-- 新闻中心 -->
+        <div class="news">
+            <div class="news-title clearfix">
+                新闻中心/NEWS CENTER
+                <a href="javascrpt:void(0)" class="fr">查看更多>></a>
+            </div>
+            <ul class="news-list">
+                <li class="clearfix">
+                    <span class="iconfont icon-CombinedShape"></span> 
+                    RTK电台哪家强？eRadio™智能电台大比测
+                    <p class="fr">2018-07-16</p>
+                </li>
+                <li class="clearfix">
+                    <span class="iconfont icon-CombinedShape"></span> 
+                    共建北斗新时代丨华信亮相第九届中国卫星导航...
+                    <p class="fr">2018-07-16</p>
+                </li>
+                <li class="clearfix">
+                    <span class="iconfont icon-CombinedShape"></span> 
+                    创新•融合丨华信引领高精度天线进入全网通时代
+                    <p class="fr">2018-07-16</p>
+                </li>
+            </ul>
+        </div>
+        <!-- 底部 -->
+        <footer>
+            <div class="dibu">
+                <a href="javascrpt:void(0)">人才招聘</a>|
+                <a href="javascrpt:void(0)">留言反馈</a>|
+                <a href="javascrpt:void(0)">友情链接</a>|
+            </div>
+            <div>翻版必究 粤ICP备09221680号</p>
+            <div>Copyright 2012 深圳市华信天线技术有限公司</p>
+        </footer>
+</body>
+</html>

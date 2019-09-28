@@ -1,0 +1,44 @@
+{
+  "id": "1428112",
+  "name": "web",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1671779",
+      "name": "喇叭",
+      "font_class": "laba",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "2504957",
+      "name": "解决方案",
+      "font_class": "jiejuefangansvg",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "3567919",
+      "name": "加油",
+      "font_class": "fillingstation",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "8850770",
+      "name": "产品",
+      "font_class": "chanpin",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "10218212",
+      "name": "联系我们",
+      "font_class": "lianxiwomen",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}
